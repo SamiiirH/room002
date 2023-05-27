@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>010101</title>
+  </head>
+  <body>
+
+  <p id="demo"></p>
+
+  
+  <script>
+// input decider
+function myFunction()
+{
+var a=document.getElementById("text_a").value.toLowerCase();
+
+if (a=="what have i done?")
+  {
+document.getElementById("answer").innerHTML="";
+  }
+else if (a==":)")
+  {
+document.getElementById("answer").innerHTML="sally did something embarrassing";
+  }
+else if (a=="010101")
+  {
+document.getElementById("answer").innerHTML="you dont use that here"; 
+  }
+else if (a=="tareef")
+  {
+document.getElementById("answer").innerHTML="perm looking ah";
+  }
+else if (a=="samir")
+  {
+document.getElementById("answer").innerHTML=":)";
+  }
+else if (a=="rezal")
+  {
+document.getElementById("answer").innerHTML="black lungs";
+  }
+else if (a=="phamim")
+  {
+document.getElementById("answer").innerHTML="lanky fool";
+  }
+else if (a=="maliha")
+  {
+document.getElementById("answer").innerHTML="failing jc";
+  }
+else if (a=="daniel")
+  {
+document.getElementById("answer").innerHTML="lightskin";
+  }
+else if (a=="nur")
+  {
+document.getElementById("answer").innerHTML="lazy guy(leng)";
+  }
+else if (a=="mahi")
+  {
+document.getElementById("answer").innerHTML="failing lc";
+  }
+else if (a=="mahin")
+  {
+document.getElementById("answer").innerHTML="failing with mahi";
+  }
+else if (a=="rory")
+  {
+document.getElementById("answer").innerHTML="white";
+  }
+else if (a=="kevin")
+  {
+document.getElementById("answer").innerHTML="...";
+  }
+else if (a=="murder")
+  {
+document.getElementById("answer").innerHTML="its not that easy";
+  }
+else
+  {
+document.getElementById("answer").innerHTML="Opps!";
+  }
+}
+//input decider
+    
+// Set the date we're counting down to
+var countDownDate = new Date("May 28, 2023 23:59:00").getTime(); //format of "month"xx, "year" "time to the second"(Jan 5, 2024 15:37:25)
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "53.51626103647486    -8.851954936981203 "; //when timer is done
+  }
+}, 1000);
+  </script>
+    
+  <div class="divbox">
+    <br>
+
+    <p class="mid">crack the encryption, hacker'S delight,<br>
+    claim the prize, treasUre oh so bright<br>
+    its a fuN liTtle project. don't be blue<br>
+    thereS only ; 1 winner. yoU?<p>
+
+    What did Sally do?
+    <p id="answer"></p>
+    <p><input id="text_a" type="text;" placeholder=":)"/></p>  <!--asking-->    
+   <p><button onclick="myFunction()">Check</button></p> <!-- checker button>
+  </div>                     
+  
+    
+  </body>
+</html>

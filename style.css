@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+body{
+  background: black;
+  color: darkred;
+   /*background image*/
+  align:center;
+}
+
+.divbox {
+  border-radius: 600px;
+  padding: 5px;
+  border: 2px outset #9ccc9c;
+}
+
+.mid {
+  font-size: 16px;
+  font-family: Times New Roman;
+  align:center;
+
+}
